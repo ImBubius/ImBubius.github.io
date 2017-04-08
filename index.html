@@ -1,3 +1,48 @@
-<html>
-<body><h1>Hello World</h1></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pxls.space Design Mode</title>
+    <link rel="stylesheet" href="pxlsStyle.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+
+</head>
+<body>
+<div class="loading"><span>Loading...</span></div>
+<div class="reticule" id="reticule"></div>
+<div class="board-container">
+    <div class="grid"></div>
+    <div class="board-zoomer">
+        <div class="board-mover">
+            <canvas id="board" width="100" height="100"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="ui" id="ui">
+    <div class="bubble-container">
+        <div class="bubble panel">Design Mode - Will not affect real board!</div>
+    </div>
+    <div class="instructions panel">
+        Mouse/arrows to pan<br>
+        Scroll to zoom<br>
+        G to toggle grid<br>
+        H to toggle info<br>
+    </div>
+    <div class="cooldown-timer"></div>
+    <div class="message"><span class="text"></span> <span class="close">x</span></div>
+    <div class="palette"></div>
+    <div class="coords panel"></div>
+    <div class="online panel"></div>
+</div>
+
+<div class="cursor" id="cursor"></div>
+
+
+<script src="pxlsApp.js"></script>
+<script src="pr0Overlay.js"></script>
+</body>
 </html>
